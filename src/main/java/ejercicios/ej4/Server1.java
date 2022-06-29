@@ -22,8 +22,8 @@ public class Server1 implements IServidores{
     }
 
     @Override
-    public void login(User user) {
-        users.get(user.id);
-        System.out.println("Usuario " + user.getNombre() + " correctamente");
+    public void login(int id, String pwd) {
+        users.get(id);
+        System.out.println("Usuario " + users.get(id).getNombre() + " logeado correctamente");
     }
 }
